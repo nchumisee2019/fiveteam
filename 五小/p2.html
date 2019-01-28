@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>新竹美食</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+  <head>
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+	  <script  type="text/javascript" >
+	 
+	  function GetUrlVar(VarName) 
+		{
+		  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+		  var regexS = "[\\?&]" + VarName + "=([^&#]*)";
+		  var regex = new RegExp(regexS);
+		  var results = regex.exec(window.location.href);
+		  if (results == null)
+		   	 return "";
+		  else
+			 return results[1];
+		}
+
+		// 要先取得網址裡的路徑起點終點經緯度參數 
+		</script>
+		  
+  </head>
+  <body>
+  
+  <div class="navbar-fixed">
+	<nav>
+    <div class="nav-wrapper green darken-3">
+      <a href="p1.html" class="brand-logo center">新竹美食</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="p5.html">新竹美食影片</a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+  
+
+  <p id="demo"></p>
+	<script>
+	 $(document).ready(function(){
+	  $('.parallax').parallax();
+  });
+      </script>
+
+  <script type="text/javascript">
+  var X = decodeURIComponent(GetUrlVar('XXX'));
+  var x=["廟口鴨香飯","翟九山東麵食館","如意麵食館","香料屋","麵朝","璽子牛肉麵","龍虎海南雞飯","東街","Schäfer 希弗德式烘焙","新竹第一家正宗燒仙草","立晉豆花","小墊子"];
+		var pica=["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokeNFw0mxkc9GgstvRgXq3IXD_n5jRgR7gOXvTTpqnldZc_PNQw",
+		         "https://img.funtory.tw/2013/01/130101-ZhaiNine/ZhaiNine_1.jpg",
+				 "https://cdn.dudooeat.com/24b856a5-78d9-4ed1-b1b9-096ac2445c34_s",
+				 "https://bhesaur.files.wordpress.com/2015/05/img_1065.jpg?w=520&h=693",
+				 "http://pcdn1.rimg.tw/photos/1015213_x2oa1bd_l.jpg",
+				 "http://cdn.walkerland.com.tw/images/upload/poi/p76112/m65205/d44210cb7eb5d9d4887229ef3edd33226bfe2139.jpg",
+				 "http://img.sillybaby.tw/uploads/20171119223310_38.jpg",
+				 "https://pic.pimg.tw/uioiu/1446217728-937851567.jpg",
+				 "https://pic.pimg.tw/chiahsinyeh/1492163208-521561659_n.jpg",
+		         "https://cdn4.tw.orstatic.com/userphoto/photo/2/20E/00EAY7F9620D6BB5FE5910px.jpg",
+				 "http://cdn.walkerland.com.tw/images/upload/poi/p26013/m63420/8f56597963d48ae3feb572f13c85abca4bba706e.jpg",
+				 "http://cdn.walkerland.com.tw/images/upload/poi/p86665/m36024/63e74e91084dc38e00de062b06c8ddffbae67529.jpg"];
+        var t="";
+		var intro=["新竹城隍廟美食小吃之一<br>地點:新竹市北區中山路142號<br>營業時間:週一-週日10:30-21:30(週一-週五15:00-15:30休息)",
+		           "以北方口味水餃起家的山東麵館<br>地點:新竹市民權路217號<br>營業時間:11：00-20：00(週一公休)",
+				   "主要的招牌就是牛肉麵(四種湯頭)跟捲餅<br>地點:新竹市東區建美路17號<br>營業時間:11:00–14:30, 17:00–20:30(星期一休息)",
+				   "印度料理餐廳，可從開胃小菜/蔬菜類/主食(雞|牛|羊|海鮮)等搭配點餐<br>地點:新竹市東區新光路19號<br>營業時間:11:30~14:00 17:30~21:00(週一公休)",
+				   "是一家麵條口感很好的麵店<br>地點:新竹市東區建新路8號<br>營業時間:11:00-21:00",
+				   "主打清燉湯頭的牛肉麵，斤餅也是不能錯過的好滋味<br>地點:新竹市東區博愛街31號<br>營業時間:11:00 - 14:00 17:00 - 21:00",
+				   "新加坡料理，招牌是泰國香米飯和嫩雞肉<br>地點:新竹市民生路169號<br>營業時間:10:00～14:00　16:30～20:30　週一公休",
+				   "日式料理<br>地點:新竹市東區民生路286號<br>營業時間:11:00-14:00 17:00-22:00",
+				   "一家手工蛋糕店<br>地點:新竹市東區民權路206巷1號<br>營業時間:週一至週五10:30~20:00 (週二公休)、週六至週日10:30~21:00",
+				   "薑汁豆花跟燒仙草，是渡冬的好夥伴<br>地點:新竹市東區林森路208號<br>營業時間:10:30 - 23:00",
+				   "冰涼的豆花消去夏天的炎熱<br>地點:新竹市東區建功一路6號<br>營業時間:12:00–00:00",
+				   "招牌是戚風蛋糕，有原味、巧克力、抹茶和伯爵茶口味，皆是早上現烤出爐<br>地點:新竹市東區三民路154號<br>營業時間:13:00–23:00"];
+	    var url=["https://www.facebook.com/%E5%BB%9F%E5%8F%A3%E9%B4%A8%E9%A6%99%E9%A3%AF-208058359219862/",
+		         "http://chai9.com/",
+				 "https://www.facebook.com/Ruiibeafnoodles/",
+				 "https://www.facebook.com/spiceshophsinchu/",
+				 "https://www.facebook.com/noodledynastyshop/",
+				 "https://www.facebook.com/pages/%E7%92%BD%E5%AD%90%E7%89%9B%E8%82%89%E9%BA%B5/191687687529817",
+				 "https://www.facebook.com/CGHNC/",
+				 "http://www.toukai.com.tw/menu.htm",
+				 "https://www.facebook.com/Schaeferbakes/",
+				 "https://www.facebook.com/%E6%96%B0%E7%AB%B9%E7%AC%AC%E4%B8%80%E5%AE%B6%E6%AD%A3%E5%AE%97%E7%87%92%E4%BB%99%E8%8D%89-185331014839710/",
+				 "https://www.facebook.com/%E7%AB%8B%E6%99%89%E5%82%B3%E7%B5%B1%E8%B1%86%E8%8A%B1-246909422001492/",
+				 "https://www.facebook.com/CafeImMat/"];
+				 
+            t += '<div class="col s12 m7">';
+            t += '<h2 class="header white-text">' + x[X] + '</h2>';
+            t += '<div class="card horizontal">';
+            t += '<div class="card-image">';
+            t += '<img width="300" height="250" src=" ' + pica[X] + '">';
+            t += '</div>';
+            t += '<div class="card-stacked">';
+            t += '<div class="card-content">';
+            t += '<p>' + intro[X] + '</p>';
+            t += '</div>';
+            t += '<div class="card-action">';
+            t += '<a class="waves-effect waves-light btn green darken-3" href="p3.html?YYY=' + X + '">痞客幫好文</a><a>';
+		    t += '</a><a class="waves-effect waves-light btn green darken-3" href="' + url[X] + '">官網</a><a> ';
+			t += '</a><a class="waves-effect waves-light btn green darken-3" href="p4.html?ZZZ=' + X + '">地圖</a>';
+            t += '</div>';
+            t += '</div>';
+            t += '</div>';
+            t += '</div>';
+         
+			document.getElementById("demo").innerHTML = t;
+	</script>
+	
+	  <script type="text/javascript" src="js/materialize.min.js"></script>
+	  <footer class="page-footer green darken-3">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">更多美食資訊</h5>
+                <li><a class="grey-text text-lighten-3" href="https://www.tripadvisor.com.tw/Restaurants-g297906-Hsinchu.html">新竹10大最佳餐廳</a></li>
+				<li><a class="grey-text text-lighten-3" href="https://ifoodie.tw/ranking/weekly/%E6%96%B0%E7%AB%B9/">愛食記新竹美食人氣榜</a></li>
+				<p class="grey-text text-lighten-4"></p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            </div>
+          </div>
+        </footer>	
+		
+  </body>
+</html>

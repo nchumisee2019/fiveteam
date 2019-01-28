@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>新竹美食</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+	 </head>
+
+    <body>
+	<div class="navbar-fixed">
+	<nav>
+    <div class="nav-wrapper green darken-3">
+      <a href="p1.html" class="brand-logo center">新竹美食</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="p5.html">新竹美食影片</a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+  
+    <ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">restaurant</i>主食----在美食沙漠挖掘美食</p></div>
+      <div class="collapsible-body"><ul class="collection">
+	  <div id="food" class="collapsible">
+	  </div>
+	</ul></div>
+    </li>
+	
+    <li>
+      <div class="collapsible-header"><i class="material-icons">local_cafe</i>甜點---不可錯過的飯後甜點</div>
+      <div class="collapsible-body"><ul class="collection">
+      <div id="dessert" class="collapsible">
+	  </div>
+	  </ul></div>
+    </li>
+	</ul>
+  
+  <div id="demo">
+	</div>
+  
+   <script>
+		$(document).ready(function() {
+		  var owl = $('.owl-carousel');
+		  owl.owlCarousel({
+			items: 4,
+			loop: true,
+			margin: 10,
+			autoplay: true,
+			autoplayTimeout: 1000,
+			autoplayHoverPause: true
+		  });
+		})
+				
+		
+		var images =  new Array();
+		images[0] = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokeNFw0mxkc9GgstvRgXq3IXD_n5jRgR7gOXvTTpqnldZc_PNQw";
+		images[1] = "https://img.funtory.tw/2013/01/130101-ZhaiNine/ZhaiNine_1.jpg";
+		images[2] = "https://cdn.dudooeat.com/24b856a5-78d9-4ed1-b1b9-096ac2445c34_s" ;
+		images[3] = "https://bhesaur.files.wordpress.com/2015/05/img_1065.jpg?w=520&h=693" ;
+		images[4] = "http://pcdn1.rimg.tw/photos/1015213_x2oa1bd_l.jpg" ;
+		images[5] = "http://cdn.walkerland.com.tw/images/upload/poi/p76112/m65205/d44210cb7eb5d9d4887229ef3edd33226bfe2139.jpg" ;
+		images[6] = "http://img.sillybaby.tw/uploads/20171119223310_38.jpg" ;
+		images[7] = "https://pic.pimg.tw/uioiu/1446217728-937851567.jpg";
+		images[8] = "https://pic.pimg.tw/chiahsinyeh/1492163208-521561659_n.jpg" ;
+		images[9] = "https://cdn4.tw.orstatic.com/userphoto/photo/2/20E/00EAY7F9620D6BB5FE5910px.jpg";
+		images[10] = "http://cdn.walkerland.com.tw/images/upload/poi/p26013/m63420/8f56597963d48ae3feb572f13c85abca4bba706e.jpg";
+		images[11] = "http://cdn.walkerland.com.tw/images/upload/poi/p86665/m36024/63e74e91084dc38e00de062b06c8ddffbae67529.jpg";
+
+		s = '<div class="owl-carousel owl-theme">';
+		for (i=0 ; i<=11 ; i++)
+			{
+			s += '<div class="item">';
+			s += 	'<img src="' + images[i] + '" width="200" height="175" />';
+			s += '</div>';
+			}
+		s += '</div>';
+		document.getElementById("demo").innerHTML = s;    
+		</script>
+		
+	  
+  
+   <script>
+	 $(document).ready(function(){
+	 $('.collapsible').collapsible();
+
+  });
+      </script>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  <footer class="page-footer green darken-3">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">更多美食資訊</h5>
+                <li><a class="grey-text text-lighten-3" href="https://www.tripadvisor.com.tw/Restaurants-g297906-Hsinchu.html">新竹10大最佳餐廳</a></li>
+				<li><a class="grey-text text-lighten-3" href="https://ifoodie.tw/ranking/weekly/%E6%96%B0%E7%AB%B9/">愛食記新竹美食人氣榜</a></li>
+				<p class="grey-text text-lighten-4"></p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            </div>
+          </div>
+        </footer>
+		<script>
+	    var x=["廟口鴨香飯","翟九山東麵食館","如意麵食館","香料屋","麵朝","璽子牛肉麵","龍虎海南雞飯","東街"];
+		var pica=["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokeNFw0mxkc9GgstvRgXq3IXD_n5jRgR7gOXvTTpqnldZc_PNQw",
+		         "https://img.funtory.tw/2013/01/130101-ZhaiNine/ZhaiNine_1.jpg",
+				 "https://cdn.dudooeat.com/24b856a5-78d9-4ed1-b1b9-096ac2445c34_s",
+				 "https://bhesaur.files.wordpress.com/2015/05/img_1065.jpg?w=520&h=693",
+				 "http://pcdn1.rimg.tw/photos/1015213_x2oa1bd_l.jpg",
+				 "http://cdn.walkerland.com.tw/images/upload/poi/p76112/m65205/d44210cb7eb5d9d4887229ef3edd33226bfe2139.jpg",
+				 "http://img.sillybaby.tw/uploads/20171119223310_38.jpg",
+				 "https://pic.pimg.tw/uioiu/1446217728-937851567.jpg"];
+		var num=["0","1","2","3","4","5","6","7"];
+        var str="";
+        for (i=0 ; i<x.length ; i++)
+            {
+            str += '<li class="collection-item avatar">';
+            str +=   '<img src=' + pica[i] + ' alt="" class="circle">';
+            str +=   '<a href="p2.html?XXX=' + num[i] + '" class="title">' + x[i] + '</a>';
+			str += '</li>';
+            }
+			document.getElementById("food").innerHTML = str;
+			$(document).ready(function(){
+			  $('.collapsible').collapsible();
+			  });
+	  </script>
+	  <script>
+	    var y=["Schäfer 希弗德式烘焙","新竹第一家正宗燒仙草","立晉豆花","小墊子"];
+		var num=["8","9","10","11"];
+		var picb=["https://pic.pimg.tw/chiahsinyeh/1492163208-521561659_n.jpg",
+		         "https://cdn4.tw.orstatic.com/userphoto/photo/2/20E/00EAY7F9620D6BB5FE5910px.jpg",
+				 "http://cdn.walkerland.com.tw/images/upload/poi/p26013/m63420/8f56597963d48ae3feb572f13c85abca4bba706e.jpg",
+				 "http://cdn.walkerland.com.tw/images/upload/poi/p86665/m36024/63e74e91084dc38e00de062b06c8ddffbae67529.jpg"];
+        var str="";
+        for (i=0 ; i<y.length ; i++)
+            {
+            str += '<li class="collection-item avatar">';
+            str +=   '<img src=' + picb[i] + ' alt="" class="circle">';
+            str +=   '<a href="p2.html?XXX=' + num[i] + '" class="title">' + y[i] + '</a>';
+			str += '</li>';
+            }
+			document.getElementById("dessert").innerHTML = str;
+			$(document).ready(function(){
+			  $('.collapsible').collapsible();
+			  });
+	  </script>
+    </body>
+  </html>

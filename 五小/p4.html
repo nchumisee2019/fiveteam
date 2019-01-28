@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>新竹美食</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+	 </head>
+
+    <body>
+	
+	<div class="navbar-fixed">
+	<nav>
+    <div class="nav-wrapper green darken-3">
+      <a href="p1.html" class="brand-logo center">新竹美食</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="p5.html">新竹美食影片</a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+  
+<body>
+
+<iframe id="demo"  src="#" width="100%" height="500">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+<script>
+        function GetUrlVar(VarName) 
+		{
+		  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+		  var regexS = "[\\?&]" + VarName + "=([^&#]*)";
+		  var regex = new RegExp(regexS);
+		  var results = regex.exec(window.location.href);
+		  if (results == null)
+		   	 return "";
+		  else
+			 return results[1];
+		}
+		var X = decodeURIComponent(GetUrlVar('ZZZ'));
+		var plac=["新竹市北區中山路142號",
+		          "新竹市東區民權路217號",
+				  "新竹市東區建美路17號",
+				  "新竹市東區新光路19號",
+				  "新竹市東區建新路8號",
+				  "新竹市東區博愛街31號",
+				  "新竹市東區民生路169號",
+				  "新竹市東區民生路286號",
+				  "新竹市東區民權路206巷1號",
+				  "新竹市東區林森路208號",
+				  "新竹市東區建功一路6號",
+				  "新竹市東區三民路154號"];
+		
+		var url = "http://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=" + plac[X] +"&z=16&t=p&output=embed";
+document.getElementById("demo").setAttribute("src",url);
+</script>
+
+<script type="text/javascript" src="js/materialize.min.js"></script>
+	  <footer class="page-footer green darken-3">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">更多美食資訊</h5>
+                <li><a class="grey-text text-lighten-3" href="https://www.tripadvisor.com.tw/Restaurants-g297906-Hsinchu.html">新竹10大最佳餐廳</a></li>
+				<li><a class="grey-text text-lighten-3" href="https://ifoodie.tw/ranking/weekly/%E6%96%B0%E7%AB%B9/">愛食記新竹美食人氣榜</a></li>
+				<p class="grey-text text-lighten-4"></p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            </div>
+          </div>
+        </footer>	
+
+</body>
+</html>
